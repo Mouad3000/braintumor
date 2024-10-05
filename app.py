@@ -17,7 +17,7 @@ def query(filename):
 st.markdown(
     """
     <h3 style="text-align: center; color: #007BFF;">
-        🧠 Classification des tumeurs cérébrales  🧠
+        🧠 Classification des tumeurs cérébrales : :   🧠
     </h3>
     <style>
     .main {
