@@ -16,9 +16,9 @@ def query(filename):
 # Titre de l'application
 st.markdown(
     """
-    <h4 style="text-align: center; color: #007BFF;">
-        🧠 Classification des tumeurs cérébrales: Yousra Zwina 🧠
-    </h4>
+    <h3 style="text-align: center; color: #007BFF;">
+        🧠 Classification des tumeurs cérébrales 🧠
+    </h3>
     <style>
     .main {
         background-color: #f0f8ff;
