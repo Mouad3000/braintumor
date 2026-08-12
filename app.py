@@ -147,71 +147,57 @@ st.set_page_config(
 # -------------------------------
 # CSS
 # -------------------------------
-st.markdown("""
-<h3 style="text-align: center; color: #007BFF;">
-    🧠 Classification des tumeurs cérébrales 🧠
-</h3>
-
-<style>
-
-.main {
-    background-color: #f0f8ff;
-}
-
-.stSidebar {
-    background-color: #f9f9f9;
-}
-
-.history-entry {
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-.no_tumor {
-    background-color: #d4edda;
-}
-
-.meningioma_tumor {
-    background-color: #fff3cd;
-}
-
-.glioma_tumor {
-    background-color: #cce5ff;
-}
-
-.pituitary_tumor {
-    background-color: #f8d7da;
-}
-
-.classification-entry {
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.no_tumor_result {
-    background-color: #28a745;
-}
-
-.meningioma_tumor_result {
-    background-color: #ffc107;
-    color: black;
-}
-
-.glioma_tumor_result {
-    background-color: #007bff;
-}
-
-.pituitary_tumor_result {
-    background-color: #dc3545;
-}
-
-</style>
-""", unsafe_allow_html=True)
+st.markdown(
+    """
+    <h3 style="text-align: center; color: #007BFF;">
+        🧠 Classification des tumeurs cérébrales 🧠
+    </h3>
+    <style>
+    .main {
+        background-color: #f0f8ff;
+    }
+    .stSidebar {
+        background-color: #f9f9f9;
+    }
+    .history-entry {
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    .no_tumor {
+        background-color: #d4edda; /* Vert pâle */
+    }
+    .meningioma_tumor {
+        background-color: #fff3cd; /* Jaune pâle */
+    }
+    .glioma_tumor {
+        background-color: #cce5ff; /* Bleu pâle */
+    }
+    .pituitary_tumor {
+        background-color: #f8d7da; /* Rouge pâle */
+    }
+    .classification-entry {
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        color: #fff;  /* Couleur du texte blanc pour un meilleur contraste */
+    }
+    .no_tumor_result {
+        background-color: #28a745; /* Vert */
+    }
+    .meningioma_tumor_result {
+        background-color: #ffc107; /* Jaune */
+    }
+    .glioma_tumor_result {
+        background-color: #007bff; /* Bleu */
+    }
+    .pituitary_tumor_result {
+        background-color: #dc3545; /* Rouge */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # -------------------------------
 # Charger le modèle UNE seule fois
