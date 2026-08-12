@@ -148,36 +148,66 @@ st.set_page_config(
 # CSS
 # -------------------------------
 st.markdown("""
+<h3 style="text-align: center; color: #007BFF;">
+    🧠 Classification des tumeurs cérébrales 🧠
+</h3>
+
 <style>
 
 .main {
-    background-color:#f8f9fa;
+    background-color: #f0f8ff;
 }
 
-.result{
-    padding:15px;
-    border-radius:10px;
-    margin-bottom:10px;
-    color:white;
-    font-weight:bold;
-    font-size:18px;
+.stSidebar {
+    background-color: #f9f9f9;
 }
 
-.glioma{
-    background:#007bff;
+.history-entry {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
-.meningioma{
-    background:#ffc107;
-    color:black;
+.no_tumor {
+    background-color: #d4edda;
 }
 
-.pituitary{
-    background:#dc3545;
+.meningioma_tumor {
+    background-color: #fff3cd;
 }
 
-.notumor{
-    background:#28a745;
+.glioma_tumor {
+    background-color: #cce5ff;
+}
+
+.pituitary_tumor {
+    background-color: #f8d7da;
+}
+
+.classification-entry {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.no_tumor_result {
+    background-color: #28a745;
+}
+
+.meningioma_tumor_result {
+    background-color: #ffc107;
+    color: black;
+}
+
+.glioma_tumor_result {
+    background-color: #007bff;
+}
+
+.pituitary_tumor_result {
+    background-color: #dc3545;
 }
 
 </style>
